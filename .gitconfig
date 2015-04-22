@@ -1,0 +1,24 @@
+[user]
+	email = viktor.vojnovski@amadeus.com
+	name = Viktor Vojnovski
+[alias]
+ st = status
+ co = checkout
+ ci = commit
+ cl = clone
+ br = branch
+ fe = fetch
+ pl = pull
+ ps = push
+ rt = remote
+	undo-commit = reset --soft HEAD^
+	log = log --follow
+[push]
+ default = tracking
+[color]
+	ui = true
+[credential]
+	helper = cache --timeout=3600
+[core]
+	autocrlf = false
+	whitespace = =

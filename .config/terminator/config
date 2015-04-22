@@ -1,0 +1,110 @@
+[global_config]
+  dbus = True
+  window_state = fullscreen
+  focus = system
+  title_transmit_fg_color = "#fdf6e3"
+  title_transmit_bg_color = "#dc322f"
+[keybindings]
+[profiles]
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    font = DejaVu Sans Mono for Powerline 10
+    use_system_font = False
+    background_image = None
+    scrollback_lines = 1000000
+    active_encodings = GB18030, UTF-8, ISO-8859-1
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    copy_on_selection = True
+    background_color = "#002b36"
+  [[solarized-dark]]
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    font = DejaVu Sans Mono for Powerline 10
+    use_system_font = False
+    background_image = None
+    scrollback_lines = 1000000
+    active_encodings = GB18030, UTF-8, ISO-8859-1
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    copy_on_selection = True
+    background_color = "#002b36"
+  [[solarized-light]]
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    font = DejaVu Sans Mono for Powerline 10
+    use_system_font = False
+    background_image = None
+    scrollback_lines = 1000000
+    active_encodings = GB18030, UTF-8, ISO-8859-1
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+    copy_on_selection = True
+    background_color = "#eee8d5"
+  [[solarized-dark-large]]
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    font = DejaVu Sans Mono for Powerline 13
+    use_system_font = False
+    background_image = None
+    scrollback_lines = 1000000
+    active_encodings = GB18030, UTF-8, ISO-8859-1
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    copy_on_selection = True
+    background_color = "#002b36"
+  [[solarized-light-large]]
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    font = DejaVu Sans Mono for Powerline 13
+    use_system_font = False
+    background_image = None
+    scrollback_lines = 1000000
+    active_encodings = GB18030, UTF-8, ISO-8859-1
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+    copy_on_selection = True
+    background_color = "#eee8d5"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = solarized-dark
+    [[[window0]]]
+      type = Window
+      parent = ""
+  [[raspored]]
+    [[[child0]]]
+      position = 0:0
+      type = Window
+      order = 0
+      parent = ""
+      size = 1680, 1050
+    [[[child1]]]
+      position = 525
+      type = VPaned
+      order = 0
+      parent = child0
+    [[[child3]]]
+      position = 739
+      type = HPaned
+      order = 1
+      parent = child1
+    [[[terminal2]]]
+      profile = solarized-dark
+      type = Terminal
+      order = 0
+      parent = child1
+    [[[terminal5]]]
+      profile = solarized-dark
+      type = Terminal
+      order = 1
+      parent = child3
+    [[[terminal4]]]
+      profile = solarized-dark
+      type = Terminal
+      order = 0
+      parent = child3
+[plugins]
