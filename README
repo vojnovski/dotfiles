@@ -1,3 +1,0 @@
-* liquidprompt must be downloaded and put in ~/.zsh/liquidprompt
-* zsh-syntax-highlighting must be downloaded and highlighters folder put in ~/.config/highlighters
-* dircolors does not exist on OS X, to be replaced with direct string
